@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const timestamp = document.getElementById("timestamp");
     const boutonNouvelle = document.getElementById("nouvelle");
     const boutonCopier = document.getElementById("copier");
+    const box = document.getElementById("box");
 
     function affiche() {
         const i = Math.floor(Math.random() * citations.length);
@@ -37,9 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const time = new Date();
         timestamp.textContent = `${time.toLocaleString()}`;
 
-        citationtxt.classList.remove("animation");
-        void citationtxt.offsetWidth;
-        citationtxt.classList.add("animation");
+        box.classList.remove('animate__animated', 'animate__flipInX');
+        void box.offsetWidth;
+        box.classList.add('animate__animated', 'animate__flipInX');
 
         localStorage.setItem("derniereCitation", JSON.stringify(citation));
     }

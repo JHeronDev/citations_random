@@ -35,25 +35,9 @@ button {
     border-radius: 10px;
     font-size: 1em;
     cursor: pointer;
-    margin: 10px;
+    margin: 30px 10px;
 }
 
 button:hover {
     opacity: 0.8;
-}
-
-.animation {
-    animation: fadeIn 0.5s ease;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
